@@ -7,7 +7,7 @@ router.use(cors())
 router.use(express.json())
 
 // router.use('/images', require('./images/images'))
-router.use('/posts', require('./blogs/blogs'))
+router.use('/blogs', require('./blogs/blogs'))
 
 router.get('/test', (req, res) =>{
     res.send('Hello World')

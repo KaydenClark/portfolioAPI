@@ -33,7 +33,7 @@ const readBlogs = () => {
                             data: docs,
                             msg: "Found the following records"
                         }
-                        
+                        console.log(results.data[0])
                         client.close();
                         resolve(results);
                     }
