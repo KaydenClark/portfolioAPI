@@ -6,7 +6,7 @@ require('dotenv').config()
 // Connection URL
 const url = process.env.ATLAS_CONNECTION
 
-const dbName = 'ToDoProject';
+const dbName = 'portfolio';
 const settings = {
     useUnifiedTopology: true
 }
@@ -33,7 +33,7 @@ const readBlogs = () => {
                             data: docs,
                             msg: "Found the following records"
                         }
-                        console.log(results.data[0])
+                        // console.log(results.data)
                         client.close();
                         resolve(results);
                     }
