@@ -1,11 +1,11 @@
 const express = require('express')
 const router = express.Router()
 
-// const {readBlogs} = require('../../DataAccess/blogs/readBlogs')
+const {readPics} = require('../../DataAccess/pics/readPics')
 
 router.get('/', async (req, res) => {
     // console.log('requesting...')
-    const imgs = "hello world"
+    const imgs = readPics()
     res.send(imgs)
 })
 
