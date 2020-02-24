@@ -6,7 +6,8 @@ const router = express.Router();
 router.use(cors())
 router.use(express.json())
 
-router.use('/images', require('./images/images'))
+// router.use('/assets', require('./assets/images'))
+router.use('/blog', require('./blog/blogs'))
 
 router.get('/test', (req, res) =>{
     res.send('Hello World')
